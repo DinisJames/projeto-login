@@ -14,26 +14,28 @@
             <div id="img">
 
             </div>
-            <div id="formulario">
-                <h1>Faça login</h1>
-                <p id="texto">Preencha aqui os seus dados <br> de cadastro para acessar a sua conta</p> <br>
-                <form action="login.php" method="post">
-                    <p>
-                        <i class="material-icons">person</i>
-                        <input type="email" name="usuario" id="iusu" required autocomplete="email" maxlength="30">
-                        <label for="iusu">Usuario</label> 
-                    </p>
-                    <p>
-                        <i class="material-icons">vpn_key</i>
-                        <input type="password" name="senha" id="isen" required autocomplete="current-password" minlength="9" maxlength="20">
-                        <label for="isen">Senha</label>
-                    </p>
-                    <p>
-                        <input id="enviar" type="submit" value="Cadastrar">
-                        <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i> </a>
-                    </p>
-                </form>
-            </div>
+                <div id="formulario">
+                    <h1>Faça login</h1>
+                    <p id="texto">Preencha aqui os seus dados <br> de cadastro para acessar a sua conta</p> <br>
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="campo1">
+                            <i class="material-icons">person</i>
+                            <input type="email" name="usuario" id="iusu">
+                            <label for="iusu">Usuario</label>
+                        </div>
+                        <div class="campo2">
+                            <i class="material-icons">vpn_key</i>
+                            <input type="password" name="senha" id="isen">
+                            <label for="isen">Senha</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Entrar">
+                            <a href="esqueci.php">Esqueci a senha <i class="material-icons">mail</i></a>
+                        </div>
+                        
+                    </form>
+                </div>
+            
         </section>
     </main>
 </body>
