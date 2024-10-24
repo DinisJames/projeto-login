@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="Estilos/media-querys.css" media="all">
     <title>tela de login</title>
@@ -15,9 +16,22 @@
             </div>
             <div id="formulario">
                 <h1>Faça login</h1>
-                <p>Preencha aqui os seus dados de cadastro para acessar a sua conta</p>
+                <p id="texto">Preencha aqui os seus dados <br> de cadastro para acessar a sua conta</p> <br>
                 <form action="login.php" method="post">
-                    
+                    <p>
+                        <i class="material-icons">person</i>
+                        <input type="email" name="usuario" id="iusu" required autocomplete="email" maxlength="30">
+                        <label for="iusu">Usuario</label> 
+                    </p>
+                    <p>
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isen" required autocomplete="current-password" minlength="9" maxlength="20">
+                        <label for="isen">Senha</label>
+                    </p>
+                    <p>
+                        <input id="enviar" type="submit" value="Cadastrar">
+                        <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i> </a>
+                    </p>
                 </form>
             </div>
         </section>
