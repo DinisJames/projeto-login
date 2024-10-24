@@ -18,21 +18,18 @@
                     <h1>Faça login</h1>
                     <p id="texto">Preencha aqui os seus dados <br> de cadastro para acessar a sua conta</p> <br>
                     <form action="login.php" method="post" autocomplete="on">
-                        <div class="campo1">
+                        <div class="campo">
                             <i class="material-icons">person</i>
-                            <input type="email" name="usuario" id="iusu">
-                            <label for="iusu">Usuario</label>
+                            <input type="email" name="usuario" id="iusu" autocomplete="email" required>
+                            <label for="iusu" class="label">Usuario</label>
                         </div>
-                        <div class="campo2">
+                        <div class="campo">
                             <i class="material-icons">vpn_key</i>
-                            <input type="password" name="senha" id="isen">
-                            <label for="isen">Senha</label>
+                            <input type="password" name="senha" id="isen" required autocomplete="current-password">
+                            <label for="isen" class="label">Senha</label>
                         </div>
-                        <div>
                             <input type="submit" value="Entrar">
-                            <a href="esqueci.php">Esqueci a senha <i class="material-icons">mail</i></a>
-                        </div>
-                        
+                            <a href="esqueci.php" class="butao">Esqueci a senha <i class="material-icons">mail</i></a>
                     </form>
                 </div>
             
